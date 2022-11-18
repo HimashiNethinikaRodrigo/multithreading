@@ -1,3 +1,5 @@
+package com.edu.thread.runable;
+
 /**
  * create thread with name and priority
  * convert runnable method to lambda expression

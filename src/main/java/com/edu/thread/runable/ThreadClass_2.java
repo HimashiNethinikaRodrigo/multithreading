@@ -1,7 +1,9 @@
+package com.edu.thread.runable;
+
 /**
- * Create thread with java thread class
+ * Create thread with name
  */
-public class ThreadClass_1 {
+public class ThreadClass_2 {
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new Runnable() {
             public void run() {
@@ -10,6 +12,7 @@ public class ThreadClass_1 {
             }
         });
 
+        thread.setName("New worker thread 1");
         System.out.println("We're in thread: " + Thread.currentThread().getName() + " before starting a new thread");
         // start thread - jvm to create new thread and pass it to operating system
         thread.start();
@@ -21,7 +24,7 @@ public class ThreadClass_1 {
          * Output:
          * We're in thread: main before starting a new thread
          * We're in thread: main after starting a new thread
-         * We're now in thread Thread-3
+         * We're now in thread New worker thread
          */
 
     }
