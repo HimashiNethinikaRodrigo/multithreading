@@ -7,6 +7,7 @@ public class ThreadClass_3 {
         Thread thread = new Thread(() -> {
             // code that will run in a new thread
             System.out.println("We're now in thread " + Thread.currentThread().getName());
+            System.out.println("Current thread priority is " + Thread.currentThread().getPriority());
         });
 
         thread.setName("New worker thread 2");
@@ -23,7 +24,8 @@ public class ThreadClass_3 {
          * Output:
          * We're in thread: main before starting a new thread
          * We're in thread: main after starting a new thread
-         * We're now in thread New worker thread
+         * We're now in thread New worker thread 2
+         * Current thread priority is 10
          */
 
     }
