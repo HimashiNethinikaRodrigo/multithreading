@@ -17,7 +17,7 @@ public class Main {
          * Output:
          * We're in thread: main before starting a new thread
          * We're in thread: main after starting a new thread
-         * We're now in thread Thread-0
+         * We're now in thread Thread-2
          */
 
     }
